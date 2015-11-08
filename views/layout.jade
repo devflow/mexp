@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    title MEXP #{version}
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:100', type='text/css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='//code.jquery.com/jquery-1.11.3.min.js')
+    script(src='/javascripts/jquery.lazyload.min.js')
+  body
+    div.header
+      div.darker
+        p MEXP #{version}
+    div.content
+      block content
+    div.footer
+      p develop by devflow
+  script(src='/javascripts/app.js')

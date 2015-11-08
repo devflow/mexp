@@ -1,0 +1,108 @@
+html, body {
+  font-family: noto sans, malgun gothic, sans-serif, dotum;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+input.inline-input {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #31465a;
+  color:#fff;
+  border: 1px solid #dedede;
+}
+
+body {
+  background-color: #31465a;
+  color:#aaa;
+}
+
+.header {
+  background: #34495e;
+  background-image: url(/images/header.jpg);
+  background-size: cover;
+}
+
+.header .darker {
+  background-color: rgba(0,0,0,0.3);
+  font-weight: 100;
+  font-family: 'Lato';
+
+  color:#95a5a6;
+  font-size: 20px;
+  padding: 5px 20px;
+}
+
+.content {
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+}
+
+a {
+  color: #1abc9c;
+}
+
+.list-container {
+
+}
+
+.list-item {
+  background-color: #262d42;
+  background-size: cover;
+  height: 300px;
+  overflow: visible;
+  position: relative;
+}
+
+.list-item > p {
+  padding: 10px;
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  bottom: 0;
+  color:#fff;
+}
+
+.list-item > .tag-container {
+  overflow:auto; overflow-x:scroll; overflow-y:hidden;  white-space: nowrap;
+  height: 30px;
+}
+
+.list-item > .tag-container > span {
+  display: inline-block;
+  margin: 5px;
+  padding: 2px 5px;
+  background-color: #3498db;
+  color:#fff;
+  font-size: 11px;
+  border-radius: 2px;
+}
+
+.page-navigation {
+}
+
+.page-navigation  > a {
+  float: left;
+  display: inline-block;
+  height: 100px;
+  width: 50%;
+  line-height: 80px;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.footer {
+  font-weight: 100;
+  font-family: 'Lato';
+  font-size: 12px;
+  background: rgba(0,0,0,0.5);
+  color:#888;
+  text-align: center;
+  padding: 20px 0;
+}

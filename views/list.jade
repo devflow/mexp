@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  div.list-container
+    each val in list
+      a(href=val.link, target='_blank')
+        div.list-item(style='background-image: url(/images/placeholder.jpg);', data-original="/i?i=" + val.thumbnail)
+          p=val.title
+          div.tag-container
+            each tag in val.tags
+              span=tag
+  div.page-navigation
+    a(href=prevlink) < Next
+    a(href=nextlink) Prev >
+    div.clearfix
