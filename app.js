@@ -5,8 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-
 var hotaru = require('./routes/hotaru');
+var openshift = require('./routes/openshift');
 
 var app = express();
 
@@ -27,6 +27,7 @@ function defAction(req, res, next){
   next();
 }
 
+app.use('/status', openshift);
 app.use('/',defAction, hotaru);
 
 // catch 404 and forward to error handler
