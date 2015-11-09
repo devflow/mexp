@@ -7,16 +7,16 @@
 var app = require('../app');
 var debug = require('debug')('mexp:server');
 var http = require('http');
+var cc = require('config-multipaas');
 
 /**
  * Get port from environment and store in Express.
  */
 
-//print env .. for debug
-console.log(process.env);
+var config = cc();
 
-var port = normalizePort(process.env.OPENSHIFT_NODEJS_PORT || process.env.PORT || '8080');
-var ip = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
+var port = config.get('PORT');
+var ip = config.get("IP");
 app.set('ip', ip);
 app.set('port', port);
 
